@@ -30,7 +30,7 @@ public class ClientAppThreeTwo {
                 int randomLED = random.nextInt(numLEDs);
                 LedColor randomColor = LedColor.values()[random.nextInt(LedColor.values().length)];
                 ledService.turnLedOn(randomLED);
-                ledService.setLedColor(randomLED, randomColor);
+                //ledService.setLedColor(randomLED, randomColor);
             ledService.stopExecutionFor(1000);
             for (int i = 0; i < numLEDs; i++) {
                 if (ledService.isOn(i)) {
